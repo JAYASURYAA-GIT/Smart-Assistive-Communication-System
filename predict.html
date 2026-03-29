@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Demo - Sign Language Translator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>LIVE SIGN LANGUAGE TRANSLATION DEMO </h1>
+    <p>Model trained for basic demo: A, B, C, D, E, F, G, H, I</p>
+</header>
+
+<section class="prediction-section">
+    <div class="video-container">
+        <img src="{{ url_for('video') }}" width="600">
+    </div>
+</section>
+
+<div class="btn-container">
+    <button onclick="goBack()">Thank You</button>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

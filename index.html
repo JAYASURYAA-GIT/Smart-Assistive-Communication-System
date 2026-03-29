@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Language Translator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>SIGN LANGUAGE TRANSLATOR USING ARTIFICIAL INTELLIGENCE AND COMPUTER VISION</h1>
+    <p>A Mini Project Developed By</p>
+</header>
+
+<section class="team-section">
+
+    <div class="member left">
+        <img src="{{ url_for('static', filename='images/member2.png') }}" class="photo">
+        <h3>BALAJI M</h3>
+        <p>VH13615</p>
+    </div>
+
+    <div class="member center">
+        <img src="{{ url_for('static', filename='images/member1.png') }}" class="photo">
+        <h3>JAYASURYAA J J</h3>
+        <p>VH13646</p>
+    </div>
+
+    <div class="member right">
+        <img src="{{ url_for('static', filename='images/member3.png') }}" class="photo">
+        <h3>HEMKUMAR G</h3>
+        <p>VH13640</p>
+    </div>
+
+</section>
+
+<section class="description">
+    <p>
+        We created a Sign Language Translator to support better communication.
+        The system reads hand signs using a webcam and shows the result instantly.
+        This project helps reduce the communication gap in a simple and practical way.
+    </p>
+</section>
+
+<div class="btn-container">
+    <button onclick="goToPrediction()">Start Translation</button>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
